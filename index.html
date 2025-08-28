@@ -6,127 +6,243 @@
   <title>My Website</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background-image: url(mazaalai_2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 100% 100%; }
-    nav { background-color:rgb(246, 191, 125);border-style: dashed ;border: #444; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: flex-end; }
-    nav ul li { position:relative; }
-    nav ul li a { color: white; padding: 10px 15px; display: block; text-decoration: none; }
-    nav ul li a:hover { background-color: #444; }
-    nav ul li ul { display: none; position: absolute; top: 40px; background: #444; min-width: 150px; }
-    nav ul li:hover ul { display: block;}
-    nav ul li ul li a { padding: 10px; }
-    nav ul li ul li a:hover {background-color:#0f0f0f ;}
-    .content { padding: 20px; font-family: Arial, Helvetica, sans-serif; font-size: medium; text-align: center; margin: 50px 80px; color: #000000;
-       p { text-align: justify;
-        text-justify: inter-word;
-        margin-right: 150px;
-        margin-left: 150px;
-        color: aliceblue;
-       }
-       h1 {
-        color: antiquewhite;
-       }
-       img {
-        margin: 0 auto;
-       }
-       p.contact {
-        text-align: justify;
-        text-justify: inter-word;
-        margin-right: 360px;
-        margin-left: 360px;
-        color: aliceblue;
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-        font-size: larger;
-                 }
- /* Here is style of social button*/
-        .social-buttons a {
-        display: inline-block;
-        margin: 10px;
-        padding: 10px 16px;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-                          }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-image: url(mazaalai_2.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
 
-        .facebook-button {
-        background-color: #3b5998;}
-        .facebook-button:hover {
-        background-color: #2d4373;}
-        .instagram-button {
-        background-color: #E1306C;}
-        .instagram-button:hover {
-        background-color: #c13584;} 
-        .social-buttons i {
-        margin-right: 8px;}
-/* Here is end */ 
-/* Here is start of contact form*/   
-        .contact-form {
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto;
-  max-width: 500px;
-  padding: 20px;
-  background-color: rgba(255,255,255,0.85);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
+    nav {
+      background-color: rgb(246, 191, 125);
+      border-style: dashed;
+      border: #444;
+    }
 
-.contact-form label {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #333;
-}
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-family: inherit;
-}
+    nav ul li {
+      position: relative;
+    }
 
-.contact-form button {
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #3b5998;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-}
+    nav ul li a {
+      color: white;
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+    }
 
-.contact-form button:hover {
-  background-color: #2d4373;
-}
-/* Here is the end of contact form*/   
-             }
+    nav ul li a:hover {
+      background-color: #444;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 40px;
+      background: #444;
+      min-width: 150px;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 10px;
+    }
+
+    nav ul li ul li a:hover {
+      background-color: #0f0f0f;
+    }
+
+    .content {
+      padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+      text-align: center;
+      margin: 50px 80px;
+      color: #000000;
+    }
+
+    .content h1 {
+      color: antiquewhite;
+    }
+
+    .content p {
+      text-align: justify;
+      text-justify: inter-word;
+      margin: 0 auto;
+      max-width: 800px;
+      color: aliceblue;
+    }
+
+    .content img {
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .content p.contact {
+      max-width: 700px;
+      margin: 10px auto;
+      color: aliceblue;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      font-size: larger;
+      
+    }
+
+    /* Social buttons */
+    .social-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 16px;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .facebook-button { background-color: #3b5998; }
+    .facebook-button:hover { background-color: #2d4373; }
+    .instagram-button { background-color: #E1306C; }
+    .instagram-button:hover { background-color: #c13584; }
+    .social-buttons i { margin-right: 8px; }
+
+    /* Contact form */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      margin: 20px auto;
+      max-width: 500px;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.85);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .contact-form label {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .contact-form button {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #3b5998;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .contact-form button:hover {
+      background-color: #2d4373;
+    }
+
+    /* Layout container */
     .container {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-               }
-    html, body {
-    height: 100%;
-    margin: 0;
-               }
-    main {
-    flex: 1; /* pushes footer down */
-         }
-    /* Style of footer */
-        footer {
-    background: gray;
-    color: white;
-    text-align: center;
-    padding: 10px;
-               }
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    html, body { height: 100%; margin: 0; }
+    main { flex: 1; }
+
+    /* Footer */
+    footer {
+      background: gray;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* -------------------- RESPONSIVE -------------------- */
+    @media (max-width: 1024px) {
+      .content {
+        margin: 30px 40px;
+      }
+      
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul li {
+        width: 100%;
+      }
+      nav ul li ul {
+    position: static;  /* remove absolute positioning */
+    background: #444;
+    width: 100%;
+  }
+
+  nav ul li ul li a {
+    padding-left: 30px; /* indent to show hierarchy */
+  }
+      .content {
+        margin: 20px;
+        font-size: 16px;
+      }
+      .content p {
+        margin: 0;
+      }
+      .content p.contact {
+        font-size: medium;
+        text-align: center;
+        text-justify: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content {
+        margin: 15px;
+        padding: 10px;
+        font-size: 14px;
+      }
+      nav ul li a {
+        padding: 8px 12px;
+      }
+      .contact-form {
+        width: 90%;
+        padding: 15px;
+      }
+      .social-buttons a {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+      .content h1 {
+        font-size: 20px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -217,17 +333,17 @@
          Its presence is a point of pride for Mongolians, reflecting both the country’s natural heritage and the delicate balance between human activity and wildlife survival in one of the world’s most unforgiving landscapes.</p>`;
     } else if (page === 'facts') {
       content.innerHTML = `<h1>Fun Facts</h1> 
-      <p> World's Rarest Bear: </p>
+      <p>&#128205 World's Rarest Bear: </p>
       <p>The Mazaalai is considered the rarest bear species in the world, with an estimated population of only 40–60 individuals left in the wild.</p>
-      <p>Desert Dweller:</p>
+      <p>&#128205 Desert Dweller:</p>
       <p>Unlike most bears that live in forests or mountains, the Mazaalai is the only bear that lives exclusively in a desert ecosystem—the harsh Gobi Desert of Mongolia.</p>
-      <p>Extreme Survivors:</p>
+      <p>&#128205 Extreme Survivors:</p>
       <p>These bears have adapted to survive in one of the harshest environments on Earth, where temperatures can swing from -40°C in winter to 40°C in summer, and water is scarce.</p>
-      <p>Mostly Vegetarian:</p>
+      <p>&#128205 Mostly Vegetarian:</p>
       <p>Their diet is 90% plant-based, consisting mainly of roots, berries, wild rhubarb, and grasses, although they will occasionally eat insects or small animals.</p>
-      <p>Smaller and Lighter:</p>
+      <p>&#128205 Smaller and Lighter:</p>
       <p>Mazaalai bears are smaller than other brown bear subspecies, weighing about 90–120 kg (200–260 lbs), helping them conserve energy in the desert.</p>
-      <p>Sacred Symbol:</p>
+      <p>&#128205 Sacred Symbol:</p>
       <p>In Mongolian culture, the Mazaalai is a symbol of resilience and strength and is considered a national treasure.</p>
     `;
     } else if (page === 'habitat') {
@@ -288,3 +404,4 @@
 </div>
 </body>
 </html>
+
